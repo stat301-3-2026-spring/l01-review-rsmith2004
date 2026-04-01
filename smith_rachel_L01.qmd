@@ -1,8 +1,8 @@
 ---
 title: "L01 Review"
 subtitle: "Data Science 3 with R (STAT 301-3)"
-author: "YOUR NAME"
-pagetitle: "L01 YOUR NAME"
+author: "Rachel Smith"
+pagetitle: "L01 Rachel Smith"
 date: today
 
 format:
@@ -26,9 +26,7 @@ citation-location: margin
 ::: {.callout-tip icon="false"}
 ## Github Repo Link
 
-To link to your github **repo**sitory, appropriately edit the example link below. Meaning replace `https://your-github-repo-url` with your github repo url. Suggest verifying the link works before submitting.
-
-[https://your-github-repo-url](https://your-github-repo-url)
+[Rachel's Repo](https://github.com/stat301-3-2026-spring/l01-review-rsmith2004)
 :::
 
 ## Overview
@@ -48,6 +46,16 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 
 YOUR SOLUTION HERE
 
+uhhhh
+1. EDA 
+2. Initial Split
+3. Resampling 
+4. Recipes
+5. Tuning/Fit/Grid
+6. Model Comparison
+7. Final Fitting
+8. Model Performance Analysis
+
 :::
 
 ### Question 2
@@ -58,6 +66,10 @@ Explain the difference between supervised and unsupervised learning.
 ## Solution
 
 YOUR SOLUTION HERE
+
+Parametric vs nonparametric, one is data-driven, the other relies on a preexisting parameters/shit 
+
+unsupervised doesn't have an outcome variable column 
 
 :::
 
@@ -81,6 +93,12 @@ YOUR SOLUTION HERE
 
 YOUR SOLUTION HERE
 
+want to infer from data if there is a statistically significant relationship 
+
+make inferences, does what we see in this dataset generalize, or demonstrate a causational relationship
+
+want to know if something works 
+
 :::
 
 #### Predictive Models
@@ -89,6 +107,14 @@ YOUR SOLUTION HERE
 ## Solution
 
 YOUR SOLUTION HERE
+
+Not how or why, just if we can hit the target
+
+if we feed things into it, do we get good prediction or bad prediction 
+
+how or why is inferential/descriptive I think????
+
+why is inferential. 
 
 :::
 
@@ -105,6 +131,8 @@ What does it mean to be a mechanistic model?
 
 YOUR SOLUTION HERE
 
+usually parametric, high assumptions about the data, saves time, but assumptions are doing a lot of work, and if those asusmptions aren't made its bad 
+
 :::
 
 #### Part (b)
@@ -114,7 +142,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+data-driven models, very flexible (tree-based), we don't add many assumptions, data runs our model and model choices 
 
 :::
 
