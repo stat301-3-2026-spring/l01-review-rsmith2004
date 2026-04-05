@@ -44,21 +44,25 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+1. EDA - learn more about the data, where transformations or recipe steps might be useful
 
-uhhhh
-1. EDA 
-2. Initial Split
-3. Resampling 
-4. Recipes
-5. Tuning/Fit/Grid
-6. Model Comparison
-7. Final Fitting
-8. Model Performance Analysis
+2. Initial Split - partition data into testing and training with reproducibility (seed)
+
+3. Resampling - use a method like vfolds to take multiple samples of the training dataset to improve model accuracy and prevent overfitting.
+
+4. Recipes - a tidymodels data preprocessing framework that involves a list of feature engineering steps
+
+5. Tuning/Fit/Grid - Tuning involves finding optimal values of hyperparameters by setting a grid of hyperparmeter ranges and running a model for each hyperparameter combination (and each resample). Or, for models with no hyperparameter tuning, fitting the model using the recipe and resamples. 
+
+6. Model Comparison - comparing all the models run based on metrics like RMSE for regression problems or ROC/AUC for classification problems, and finding the best metric result to determine best model. 
+
+7. Final Fitting - training best dataset on ALL the training data
+
+8. Model Performance Analysis - evaluating performance based on comparison with the testing data to look at predictive power. 
 
 :::
 
-### Question 2
+### Question 2*****
 
 Explain the difference between supervised and unsupervised learning.
 
@@ -82,7 +86,7 @@ In general, we can classify a model by its purpose into 1 of the 3 categories be
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+The goal is to describe a characteristic of the data, like the distribution on a variable or the relationship/pattern between multiple variables.  
 
 :::
 
@@ -91,13 +95,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
-want to infer from data if there is a statistically significant relationship 
-
-make inferences, does what we see in this dataset generalize, or demonstrate a causational relationship
-
-want to know if something works 
+The goal is to infer from data if there is a statistically significant relationship. These models help make inferences, and answers questions like: does what we see in this dataset generalize or demonstrate a causational relationship?
 
 :::
 
@@ -106,15 +104,7 @@ want to know if something works
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
-Not how or why, just if we can hit the target
-
-if we feed things into it, do we get good prediction or bad prediction 
-
-how or why is inferential/descriptive I think????
-
-why is inferential. 
+The goal is predictive power. Can data be predicted? If we give the model information or use a certain type of model, do we get a good or bad prediction? Is the prediction accurate?
 
 :::
 
@@ -129,9 +119,7 @@ What does it mean to be a mechanistic model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
-usually parametric, high assumptions about the data, saves time, but assumptions are doing a lot of work, and if those asusmptions aren't made its bad 
+A mechanistic model usually parametric. It uses existing formulas/equations and makes high assumptions about the data. This method saves time, but assumptions are doing a lot of work.
 
 :::
 
@@ -142,7 +130,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-data-driven models, very flexible (tree-based), we don't add many assumptions, data runs our model and model choices 
+These are data-driven models, very flexible (tree-based) and can fit nontraditional patterns that established equations cannot accurately describe. Not many assumptions are added, data runs the model and model choices.
 
 :::
 
@@ -153,7 +141,9 @@ How does the mechanistic and empirically driven model terminology relate to the 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Mechanistic models are parametric, they follows some known equation and estimate the set of *parameters*.
+
+Nonparametric models don't assume anything about the data, they are empirically driven models. 
 
 :::
 
@@ -164,7 +154,7 @@ In general, is a mechanistic or empirically driven model easier to interpret? Ex
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A mechanistic model is easier to interpret because it follows a known formula and has a fixed structure. 
 
 :::
 
@@ -175,7 +165,7 @@ How does mechanistic and empirically driven model terminology relate to the idea
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Empirically driven models are more flexible because they fit the pattern of the data, while mechanistic models force the data into an existing formula, which might not fit well at all. 
 
 :::
 
@@ -186,7 +176,7 @@ Describe the bias-variance trade-off when considering the use of a mechanistic o
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Mechanistic models have high bias (points/predictions away from target) and low variance (consistent clutter), whereas empirically driven models have low bias but high variance (very spread out results).
 
 :::
 
@@ -197,7 +187,7 @@ Explain the difference between a regression and classification machine learning 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A regression problem predicts continuous numeric values, while a classification problem predicts a fixed number of categories/classes.
 
 :::
 
@@ -208,7 +198,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+It's useful to stratify by the outcome/target variable because it maintains an equal distribution and representation of variables in the sample that is similar to the actual population, thus reducing sample error. 
 
 :::
 
@@ -219,7 +209,7 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+V-Fold cross validation takes V folds (with the 1 fold being taken for testing and V-1 folds being used for training), fits and tests the model using that one fold, and then repeats the process until each fold has been a testing set. Then, this process is R times. Each fit has an assessment metric like the RMSE calculated, and the mean RMSE of all those resamples is calculated. We use this technique to help prevent overfitting (through fitting and testing repeatedly) and to help with the bias and variance tradeoff. 
 
 :::
 
@@ -230,7 +220,7 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Bootstrap resampling is better for smaller datasets, where splitting the data into too many folds might not be feasible. 
 
 :::
 
@@ -241,7 +231,7 @@ Briefly describe model tuning and why we use it.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Model tuning involves adjusting the hyperparameters of a model to improve model accuracy and performance. 
 
 :::
 
@@ -252,7 +242,7 @@ What are two common performance metrics when dealing with a regression ML proble
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+The RMSE, or root mean square error,statistical metric measuring the average difference between predicted and actual values
 
 :::
 
