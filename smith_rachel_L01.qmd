@@ -54,7 +54,7 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 
 5. Tuning/Fit/Grid - Tuning involves finding optimal values of hyperparameters by setting a grid of hyperparmeter ranges and running a model for each hyperparameter combination (and each resample). Or, for models with no hyperparameter tuning, fitting the model using the recipe and resamples. 
 
-6. Model Comparison - comparing all the models run based on metrics like RMSE for regression problems or ROC/AUC for classification problems, and finding the best metric result to determine best model. 
+6. Model Comparison - comparing all the models run based on metrics like RMSE for regression problems or ROC-AUC for classification problems, and finding the best metric result to determine best model. 
 
 7. Final Fitting - training best dataset on ALL the training data
 
@@ -62,18 +62,14 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 
 :::
 
-### Question 2*****
+### Question 2
 
 Explain the difference between supervised and unsupervised learning.
 
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
-Parametric vs nonparametric, one is data-driven, the other relies on a preexisting parameters/shit 
-
-unsupervised doesn't have an outcome variable column 
+Supervised learning is pre-categorized data, while unsupervised learning is unlabeled data. Unsupervised does not have an outcome variable column. So, the patterns and structures need to be detected.  
 
 :::
 
@@ -242,7 +238,9 @@ What are two common performance metrics when dealing with a regression ML proble
 ::: {.callout-tip icon="false"}
 ## Solution
 
-The RMSE, or root mean square error,statistical metric measuring the average difference between predicted and actual values
+The RMSE, or root mean square error, measures the average difference between predicted and actual values. This is measured in the unit of the target variable. 
+
+The R-Squared metric is a percentage that measures how explainable the variability in the target variable is explained by the predictors. For example, an RSQ of .90 means 90% of the variability can be explained, which is good. 
 
 :::
 
@@ -251,7 +249,10 @@ What are two common performance metrics when dealing with a classification ML pr
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+The accuracy performance metric gives a percentage that describes the ratio of correct predictions (pred = actual). Higher accuracy means better predictive performance. 
+
+The roc_auc calculates the area under the receiver operating characteristic (ROC) curve. The ROC computes trade-off between sensitivity and specificity.
+
 
 :::
 
@@ -266,7 +267,7 @@ A company with a subscription based service (for example Netflix, Disney+, New Y
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+This is an inferential problem, because the goal is to infer or draw conclusions from the data, looking at the relationship between churn and number of service calls, and determining if it is statistically significant. 
 
 :::
 
@@ -275,7 +276,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+This is a predictive problem because the question aims to predict the customers churning behavior (target variable). 
 
 :::
 
