@@ -1,12 +1,9 @@
 ---
 title: "Self Evaluation L01 Review"
-subtitle: |
-  | Data Science 2 with R 
-  | STAT 301-2
+subtitle: "Data Science 3 with R (STAT 301-3)"
 author: "Rachel Smith"
-pagetitle: "Self Evaluation PQ2 Rachel Smith"
+pagetitle: "Self Evaluation L01 Rachel Smith"
 date: today
-
 
 format:
   html:
@@ -281,15 +278,15 @@ Nonparametric models don't assume anything about the data, they are empirically 
 ::: {.callout-important icon="false"}
 
 ## Score 
-
+5
 
 ## Explanation
 
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
+Went beyond the solution. Good!
 
 ## Updated solution
 
-*Only required if a 3 or less is scored on the question.*
+N/A
 
 
 :::
@@ -311,16 +308,15 @@ A mechanistic model is easier to interpret because it follows a known formula an
 ::: {.callout-important icon="false"}
 
 ## Score 
-
+5
 
 ## Explanation
 
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
+Got the main point. Just didn't explain why by that logic empirically driven model isn't easy to interpret, which question didn't ask so that's fine. Good. 
 
 ## Updated solution
 
-*Only required if a 3 or less is scored on the question.*
-
+N/A
 
 :::
 
@@ -341,16 +337,15 @@ Empirically driven models are more flexible because they fit the pattern of the 
 ::: {.callout-important icon="false"}
 
 ## Score 
-
+5
 
 ## Explanation
 
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
+Good. Explained mechanistic comparison this time while answer key didn't. Interesting. Good. 
 
 ## Updated solution
 
-*Only required if a 3 or less is scored on the question.*
-
+N/A
 
 :::
 
@@ -371,16 +366,17 @@ Mechanistic models have high bias (points/predictions away from target) and low 
 ::: {.callout-important icon="false"}
 
 ## Score 
-
+3
 
 ## Explanation
 
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
+Didn't really go into the why (ie, why low bias and what it means in the context of the model).
 
 ## Updated solution
 
-*Only required if a 3 or less is scored on the question.*
+Mechanistic models have high bias (points/predictions away from target) and low variance (consistent clutter). This is because existing formulas are very simple and high bias because not fitting the exact pattern of the data.
 
+However,empirically driven models have low bias but high variance (very spread out results). The high variance is because the model fit is data-specific and unique, and the low bias comes from fitting the mold comparably closer.
 
 :::
 
@@ -401,16 +397,15 @@ A regression problem predicts continuous numeric values, while a classification 
 ::: {.callout-important icon="false"}
 
 ## Score 
-
+5
 
 ## Explanation
 
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
+Exactly. 
 
 ## Updated solution
 
-*Only required if a 3 or less is scored on the question.*
-
+N/A
 
 :::
 
@@ -431,16 +426,15 @@ It's useful to stratify by the outcome/target variable because it maintains an e
 ::: {.callout-important icon="false"}
 
 ## Score 
-
+5
 
 ## Explanation
 
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
+Same ideas. Minor wording differences. 
 
 ## Updated solution
 
-*Only required if a 3 or less is scored on the question.*
-
+N/A
 
 :::
 
@@ -461,16 +455,15 @@ V-Fold cross validation takes V folds (with the 1 fold being taken for testing a
 ::: {.callout-important icon="false"}
 
 ## Score 
-
+4
 
 ## Explanation
 
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
+Could've elaborated that the RMSE calculated is an estimate of the test set RMSE and is not the actual RMSE used. 
 
 ## Updated solution
 
-*Only required if a 3 or less is scored on the question.*
-
+N/A
 
 :::
 
@@ -491,16 +484,15 @@ Bootstrap resampling is better for smaller datasets, where splitting the data in
 ::: {.callout-important icon="false"}
 
 ## Score 
-
+3
 
 ## Explanation
 
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
+Didn't mention using bootstrapping for low variance.
 
 ## Updated solution
 
-*Only required if a 3 or less is scored on the question.*
-
+Bootstrap resampling is better for smaller datasets, where splitting the data into too many folds might not be feasible. It is also a good choice when you want to lower the variance of the test assessment metric, because more bootstraps can be run than v-folds (means this is good for empirically-driven models). 
 
 :::
 
@@ -521,15 +513,15 @@ Model tuning involves adjusting the hyperparameters of a model to improve model 
 ::: {.callout-important icon="false"}
 
 ## Score 
-
+4
 
 ## Explanation
 
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
+Good. Just emphasize the point is always to find the best model.
 
 ## Updated solution
 
-*Only required if a 3 or less is scored on the question.*
+N/A
 
 
 :::
@@ -553,16 +545,15 @@ The R-Squared metric is a percentage that measures how explainable the variabili
 ::: {.callout-important icon="false"}
 
 ## Score 
-
+5
 
 ## Explanation
 
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
+Really Good! Even went into more detail. 
 
 ## Updated solution
 
-*Only required if a 3 or less is scored on the question.*
-
+N/A
 
 :::
 
@@ -584,16 +575,15 @@ The roc_auc calculates the area under the receiver operating characteristic (ROC
 ::: {.callout-important icon="false"}
 
 ## Score 
-
+5
 
 ## Explanation
 
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
+Again really good! Went into a lot of good detail.
 
 ## Updated solution
 
-*Only required if a 3 or less is scored on the question.*
-
+N/A
 
 :::
 
@@ -618,15 +608,15 @@ This is an inferential problem, because the goal is to infer or draw conclusions
 ::: {.callout-important icon="false"}
 
 ## Score 
-
+5
 
 ## Explanation
 
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
+Good.
 
 ## Updated solution
 
-*Only required if a 3 or less is scored on the question.*
+N/A
 
 
 :::
@@ -646,16 +636,15 @@ This is a predictive problem because the question aims to predict the customers 
 ::: {.callout-important icon="false"}
 
 ## Score 
-
+5
 
 ## Explanation
 
-Explain the score. Clearly identify what your misunderstandings were. Explain why you believe this error/misunderstanding occurred.
+Good. Just a note: the why is not important here. 
 
 ## Updated solution
 
-*Only required if a 3 or less is scored on the question.*
-
+N/A
 
 :::
 
